@@ -19,7 +19,15 @@ The core idea of the proposed method is to address the challenge of effectively 
  Last but not least, the authors will be very grateful for the selfless and constructive suggestions of the reviewers.
  
   # How to reproduce this work?
- To replicate this work, you must complete several stages, encompassing [dataset download and preprocess](#download-dataset-and-preprocess), [establishment of the operating environment](#build-environment), [model train and test](#train-and-test-model), and [score fusion](#ensemble-results).
+ To reproduce this work, you must complete several stages, including
+ 
+ **Step 1**, [Download dataset and preprocess](#download-dataset-and-preprocess)
+ 
+ **Step 2**, [Build environment](#build-environment)
+ 
+ **Step 3**,  [Train and test model](#train-and-test-model)
+ 
+ **Step 4**,  [Ensemble results](#ensemble-results)
  
  # Download dataset and preprocess
  We conduct experiments on two large multimodal action datasets, namely NTU RGB+D and NTU RGB+D 120. Download the dataset first, and then preprocess to generate mid-level features.
@@ -29,10 +37,13 @@ The core idea of the proposed method is to address the challenge of effectively 
  
  Download data for these modalities: Skeleton, Masked depth maps, RGB videos.
  
+ ## Preprocess
+ 
  # Build environment
  
  
  # Train and test model
-
+ Each single-stream model is trained first, and then the learned model parameters are used for testing.
 
  # Ensemble results
+ Perform weighted score fusion. Here we use the highest score finally obtained by each modality single-stream input for fusion. It is worth noting that the best results are not necessarily obtained from the fusion of these highest scores. Please try it yourself.
