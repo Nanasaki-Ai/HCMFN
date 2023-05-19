@@ -38,9 +38,10 @@ The core idea of the proposed method is to address the challenge of effectively 
  Download data for these modalities: Skeleton, Masked depth maps, RGB videos.
  
  ## Preprocess
+ The [3D heatmap volumes](https://github.com/kennymckormick/pyskl/blob/main/tools/data/README.md) are available for download in PoseC3D. For convenience, we provide HCI for depth maps, RGB videos and optical flow modalities. Additionally, our code allows you to generate HCI for different modalities as per your requirements.
  
  # Build environment
- 
+ HCMFN has been enhanced by incorporating code from PoseC3D and MMNet. To evaluate its effectiveness in different contexts, we conducted experiments in various environments. Specifically, we utilized the environment of [MMLab](https://github.com/kennymckormick/pyskl) to process the input of 3D heatmap volumes, while the environment of [MMNet](https://github.com/bruceyo/MMNet) was employed for handling the input of HCI.
  
  # Train and test model
  Each single-stream model is trained first, and then the learned model parameters are used for testing.
