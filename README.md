@@ -22,7 +22,12 @@ The core idea of the proposed method is to address the challenge of effectively 
  To replicate this work, you must complete several stages, encompassing [dataset download and preprocess](#download-dataset-and-preprocess), [establishment of the operating environment](#build-environment), [model train and test](#train-and-test-model), and [score fusion](#ensemble-results).
  
  # Download dataset and preprocess
+ We conduct experiments on two large multimodal action datasets, namely NTU RGB+D and NTU RGB+D 120. Download the dataset first, and then preprocess to generate mid-level features.
  
+ ## Download dataset
+ Request permission at RoseLab to download both datasets. [Link](https://rose1.ntu.edu.sg/dataset/actionRecognition/)
+ 
+ Download data for these modalities: Skeleton, Masked depth maps, RGB videos.
  
  # Build environment
  
