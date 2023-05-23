@@ -61,4 +61,8 @@ The core idea of the proposed method is to address the challenge of effectively 
           -ensemble120_xset.py
           -ensemble120_xsub.py
           
- The four .py files correspond to the score fusion of the four benchmarks. You can change the alpha to adjust the weights for different modalities. 
+ The four .py files correspond to the score fusion of the four benchmarks. You can change the alpha to adjust the weights for different modalities.
+ 
+ For example, you can ensemble the results of the XSub, one of the benchmark of NTU RGB+D:
+ 
+    `python ensemble60_xsub.py`
