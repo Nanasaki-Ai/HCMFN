@@ -49,4 +49,16 @@ The core idea of the proposed method is to address the challenge of effectively 
  # Ensemble results
  Perform weighted score fusion. Here we use the highest score finally obtained by each modality single-stream input for fusion. It is worth noting that the best results are not necessarily obtained from the fusion of these highest scores. Please try it yourself.
 
- Due to the upload file size limit (25MB), we store ensemble-related files in [Baidu Cloud](https://pan.baidu.com/s/1mY2BWLJqxprsQ4cZB2-SEw?pwd=4ecs).
+ Due to the upload file size limit (25MB), we store ensemble-related files in Baidu Cloud.
+ 
+ The files are arranged as follows:
+ 
+         -ensemble\  
+          -ntu60 
+          -ntu120
+          -ensemble60_xsub.py
+          -ensemble60_xview.py
+          -ensemble120_xset.py
+          -ensemble120_xsub.py
+          
+ The four .py files correspond to the score fusion of the four benchmarks. You can change the alpha to adjust the weights for different modalities. 
