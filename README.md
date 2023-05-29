@@ -134,13 +134,15 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
 
     `python main.py`
 
+We use the official code of [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) to generate labels for different benchmarks. You can also use these labels directly.
+
 **Pay attention to modify the file path.**
 
 | File path parameter    | Description         |
 |------------------------|---------------------|
-| data_path              |  Raw skeleton data  |
-| dataset                |  ntu or ntu120      |
-| dataset_type           |  Benchmark, i.e., xsub or xview |
+| data_path              |  label file - default='data'                 |
+| dataset                |  label file - Dataset, i.e., ntu or ntu120   |
+| dataset_type           |  label file - Benchmark, i.e., xsub or xview |
 | output                 |  Output file        |
 | rgb_images_path        |  RGB HCI file       |
 
