@@ -25,7 +25,7 @@ def init_parse():
     parser.add_argument('--weights', default=None, help='the weights for network initialization')
 
     # data
-    parser.add_argument('--data_path', type=str, default=r'E:\PyTorchTest\2sAGCN\data', help='')
+    parser.add_argument('--data_path', type=str, default='data', help='')
     parser.add_argument("--dataset", type=str, default="ntu", choices=['ntu', 'ntu120'])
     parser.add_argument('--dataset_type', type=str, default='xsub', help='')
     parser.add_argument('--rgb_images_path', type=str, default=r'F:\NTU RGB+D\ntu60_roi_48_48\xsub\train\\', help='')
