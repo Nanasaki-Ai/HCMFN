@@ -22,6 +22,9 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
 
  Last but not least, the authors will be very grateful for the selfless and constructive suggestions of the reviewers.
 
+# Update notice
+All HCI will be uploaded for download by **June 15th**. Now you can also generate HCI yourself based on our code.
+
 # Ablation studies
 
 The detailed ablation studies on NTU RGB+D (CS/CV) and NTU RGB+D 120 (XSub/XSet) are as follows.
