@@ -80,6 +80,8 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  In view of the huge amount of data generated during framing, for each RGB video, we use the method of framing and deleting to construct RGB and optical flow HCI.
  
  Although NTU RGB+D has two benchmarks, note that we store all training samples and testing samples in the 'train' folder.
+ 
+ Since we use flownet2 to generate optical flow HCI, you must [download the pretrained model](https://pan.baidu.com/s/1WkT2e3O5RECTYxYeeQPKGQ?pwd=cr5w).
 
  For example, you can generate RGB and optical flow HCI:
  
@@ -106,10 +108,18 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  Each data stream needs to be trained separately. For $J$ and $B$, please refer to the tutorial of PoseC3D. Here we introduce the training method about HCI.
  
  For RGB HCI:
- 
+
+    `python main.py`
+
+**Pay attention to modify the file path.**
+
  For optical flow HCI:
  
+    `python main_flow.py`
+ 
  For depth HCI:
+
+    `python main_depth.py`
 
  # Ensemble results
  
