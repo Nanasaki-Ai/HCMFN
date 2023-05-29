@@ -25,7 +25,7 @@ def init_parse():
     parser.add_argument('--weights', default=r'Outputs_flow\ntu\xsub\2023-03-31-20-16-31\Epoch26-0.6045368909835815.pt', help='the weights for network initialization')
 
     # data
-    parser.add_argument('--data_path', type=str, default=r'E:\PyTorchTest\2sAGCN\data', help='')
+    parser.add_argument('--data_path', type=str, default='data', help='')
     parser.add_argument("--dataset", type=str, default="ntu", choices=['ntu', 'ntu120'])
     parser.add_argument('--dataset_type', type=str, default='xsub', help='')
 
