@@ -113,6 +113,14 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
 
 **Pay attention to modify the file path.**
 
+| File path parameter    | Description         |
+|------------------------|---------------------|
+| data_path              |  Raw skeleton data  |
+| dataset                |  ntu or ntu120      |
+| dataset_type           |  Benchmark, i.e., xsub or xview |
+| output                 |  Output file        |
+| rgb_images_path        |  RGB HCI file       |
+
  For optical flow HCI:
  
     `python main_flow.py`
