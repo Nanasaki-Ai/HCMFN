@@ -56,9 +56,9 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
 
  **Step 2**, [Download dataset and preprocess](#download-dataset-and-preprocess) 
   
- **Step 3**,  [Train and test model](#train-and-test-model)
+ **Step 3**, [Train and test model](#train-and-test-model)
  
- **Step 4**,  [Ensemble results](#ensemble-results)
+ **Step 4**, [Ensemble results](#ensemble-results)
  
  If you only need to quickly reproduce the experimental results in the article, please follow **Step 4**.
 
@@ -80,6 +80,26 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  
  The [3D heatmap volumes](https://github.com/kennymckormick/pyskl/blob/main/tools/data/README.md) are available for download in PoseC3D. For convenience, we provide HCI for depth maps, RGB videos and optical flow modalities. Additionally, our code allows you to generate HCI for different modalities as per your requirements.
  
+ <p align="center">
+  <img src="demo/rock-paper-scissors.gif" alt="rock-paper-scissors (RGB video)" width="400"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="demo/rock-paper-scissors-HCI.png" alt="rock-paper-scissors (RGB HCI)" width="400"/>
+</p>
+
+ <p align="center">
+  <em>Rock-paper-scissors. Left: RGB video. Right: RGB HCI</em>
+</p>
+
+ <p align="center">
+  <img src="demo/throw.gif" alt="rock-paper-scissors (RGB video)" width="400"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="demo/throw.png" alt="rock-paper-scissors (RGB HCI)" width="400"/>
+</p>
+
+ <p align="center">
+  <em>Throw. Left: Masked depth maps. Right: Depth HCI</em>
+</p>
+
  In view of the huge amount of data generated during framing, for each RGB video, we use the method of framing and deleting to construct RGB and optical flow HCI.
  
  Although NTU RGB+D has two benchmarks, note that we store all training samples and testing samples in the 'train' folder.
