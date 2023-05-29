@@ -48,17 +48,21 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
 # How to reproduce this work?
 
  To reproduce this work, you must complete several stages, including
- 
- **Step 1**, [Download dataset and preprocess](#download-dataset-and-preprocess)
- 
- **Step 2**, [Build environment](#build-environment)
- 
+
+ **Step 1**, [Build environment](#build-environment)
+
+ **Step 2**, [Download dataset and preprocess](#download-dataset-and-preprocess) 
+  
  **Step 3**,  [Train and test model](#train-and-test-model)
  
  **Step 4**,  [Ensemble results](#ensemble-results)
  
  If you only need to quickly reproduce the experimental results in the article, please follow **Step 4**.
+
+ # Build environment
  
+ HCMFN has been enhanced by incorporating code from PoseC3D and MMNet. To evaluate its effectiveness in different contexts, we conduct experiments in various environments. Specifically, we utilize the environment of [MMLab](https://github.com/kennymckormick/pyskl) to process the input of 3D heatmap volumes, while the environment of [MMNet](https://github.com/bruceyo/MMNet) is employed for handling the input of HCI.
+
  # Download dataset and preprocess
  
  We conduct experiments on two large multimodal action datasets, namely NTU RGB+D and NTU RGB+D 120. Download the dataset first, and then preprocess to generate mid-level features.
@@ -73,13 +77,39 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  
  The [3D heatmap volumes](https://github.com/kennymckormick/pyskl/blob/main/tools/data/README.md) are available for download in PoseC3D. For convenience, we provide HCI for depth maps, RGB videos and optical flow modalities. Additionally, our code allows you to generate HCI for different modalities as per your requirements.
  
- # Build environment
+ In view of the huge amount of data generated during framing, for each RGB video, we use the method of framing and deleting to construct RGB and optical flow HCI.
  
- HCMFN has been enhanced by incorporating code from PoseC3D and MMNet. To evaluate its effectiveness in different contexts, we conducted experiments in various environments. Specifically, we utilized the environment of [MMLab](https://github.com/kennymckormick/pyskl) to process the input of 3D heatmap volumes, while the environment of [MMNet](https://github.com/bruceyo/MMNet) was employed for handling the input of HCI.
+ Although NTU RGB+D has two benchmarks, note that we store all training samples and testing samples in the 'train' folder.
+
+ For example, you can generate RGB and optical flow HCI:
+ 
+    `python ntu60_gen_HCI.py`
+    
+ **Pay attention to modify the file path.**
+
+| File path parameter    | Description         |
+|------------------------|---------------------|
+| skeletons_path         |  Raw skeleton data  |
+| frames_path            |  Raw rgb video      |
+| ignored_sample_path    |  Samples that need to be ignored (.txt) |
+| out_folder             |  RGB HCI output file |
+| out_folder_opt         |  Optical flow HCI output file |
+    
+ Additionally, you can generate depth HCI：
+ 
+    `python ntu60_gen_depth_HCI.py`
  
  # Train and test model
  
  Each single-stream model is trained first, and then the learned model parameters are used for testing.
+ 
+ Each data stream needs to be trained separately. For $J$ and $B$, please refer to the tutorial of PoseC3D. Here we introduce the training method about HCI.
+ 
+ For RGB HCI:
+ 
+ For optical flow HCI:
+ 
+ For depth HCI:
 
  # Ensemble results
  
