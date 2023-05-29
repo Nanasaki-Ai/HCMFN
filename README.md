@@ -140,9 +140,9 @@ We use the official code of [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) to gen
 
 | File path parameter    | Description         |
 |------------------------|---------------------|
-| data_path              |  label file - default='data'                 |
-| dataset                |  label file - Dataset, i.e., ntu or ntu120   |
-| dataset_type           |  label file - Benchmark, i.e., xsub or xview |
+| data_path              |  Label file - default='data'                 |
+| dataset                |  Label file - Dataset, i.e., ntu or ntu120   |
+| dataset_type           |  Label file - Benchmark, i.e., xsub or xview |
 | output                 |  Output file        |
 | rgb_images_path        |  RGB HCI file       |
 
