@@ -81,7 +81,7 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  
  Although NTU RGB+D has two benchmarks, note that we store all training samples and testing samples in the 'train' folder.
  
- Since we use flownet2 to generate optical flow HCI, you must [download the pretrained model](https://pan.baidu.com/s/1WkT2e3O5RECTYxYeeQPKGQ?pwd=cr5w).
+ Since we use flownet2 to generate optical flow HCI, you must download the pretrained model (173MB). [Baidu Cloud](https://pan.baidu.com/s/1WkT2e3O5RECTYxYeeQPKGQ?pwd=cr5w)
 
  For example, you can generate RGB and optical flow HCI:
  
