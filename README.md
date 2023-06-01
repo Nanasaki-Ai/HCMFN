@@ -23,7 +23,7 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
  Last but not least, the authors will be very grateful for the selfless and constructive suggestions of the reviewers.
 
 # Update notice
-All HCI will be uploaded for download by **June 15th**. Now you can also generate HCI yourself based on our code.
+If you need to download on **Google Drive**, please contact me. Now you can also download everything on **Baidu Cloud**.
 
 # Ablation studies
 
@@ -79,6 +79,14 @@ $J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ sta
  ## Preprocess
  
  The [3D heatmap volumes](https://github.com/kennymckormick/pyskl/blob/main/tools/data/README.md) are available for download in PoseC3D. For convenience, we provide HCI for depth maps, RGB videos and optical flow modalities. Additionally, our code allows you to generate HCI for different modalities as per your requirements.
+ 
+ **NTU RGB+D HCI**
+ 
+ | HCI modalities | Baidu Cloud Link |  Google Drive Link |
+ |----------------|------------------|--------------------| 
+ | RGB HCI         | [Link](https://pan.baidu.com/s/1gogL--PS7UA26xmrKn52OA?pwd=t061) | - |
+ | Optical flow HCI| [Link](https://pan.baidu.com/s/1evggahe3mbbilrMR5Y_gYg?pwd=ffce) | - |
+ | Depth HCI       | [Link](https://pan.baidu.com/s/1mE2ZloU3tD4Y7l708xzpVg?pwd=1p98) | - |
  
  <p align="center">
   <img src="demo/rock-paper-scissors.gif" alt="rock-paper-scissors (RGB video)" width="400"/>
