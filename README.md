@@ -68,7 +68,7 @@ The detailed ablation studies on NTU RGB+D (CS/CV) and NTU RGB+D 120 (XSub/XSet)
 | \#21   |  $S+R+O+D$          | \#3+\#7+\#8+\#9 (HCMFN)| **95.2** | **98.0** | 89.9 | **92.7** |
 | \#22   |  $S+R+O+D$          | \#6+\#7+\#8+\#9 (HCMFN)| 93.5 | 97.1 | **90.7** | 91.7 |
 
-$J$, $B$ represent the feature representations of jonits and bones, respectively. $S$ stands for $J$ and $B$ together. $R$, $O$ and $D$ denote HCI of RGB, optical flow and depth, respectively. + indicates socre fusion. Bold accuracy indicates the best (HCMFN).
+$J$, $B$ represent the feature representations of jonits and bones, respectively. $S$ stands for $J$ and $B$ together. $R$, $O$ and $D$ denote HCI of RGB, optical flow and depth, respectively. + indicates socre fusion. Bold accuracy indicates the best.
 
 # How to reproduce this work?
 
