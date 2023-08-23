@@ -4,9 +4,21 @@
 
 # Abstract
 
-The core idea of the proposed method is to address the challenge of effectively fusing different modalities in human action recognition. To overcome the presence of redundant background information, the method converts RGB, depth, and optical flow data into human-centric images (HCI) based on key point sequences. HCI prioritize the movement changes of essential body parts, minimizing the influence of unnecessary backgrounds and reducing computing resource requirements. Additionally, a human-centric multimodal fusion network (HCMFN) is introduced to learn action features from different modalities and extract comprehensive action patterns. 
+In this work, we propose an innovative skeleton-guided multimodal data fusion methodology that transforms depth, RGB, and optical flow modalities into human-centric images (HCI) based on keypoint sequences. Building upon this foundation, we introduce a human-centric multimodal fusion network (HCMFN),  which can comprehensively extract the action patterns of different modalities. Our model can enhance performance in combination with skeleton-based techniques, delivering significant improvements with rapid inference speed.
+
+Extensive experiments on two large-scale multimodal datasets, namely NTU RGB+D and NTU RGB+D 120, validate the capacity of HCMFN to bolster the robustness of skeleton-based methods in two challenging HAR tasks:
+
+(1) discriminating between actions with subtle inter-class differences, and 
+
+(2) recognizing actions from varying viewpoints.
 
 This work has been submitted to **ESWA**. Please enlighten me with your instructions.
+
+| Date   | Status |
+|--------|--------|
+|May 31, 2023|Manuscript submit to journal|
+|Aug 04, 2023|Revise|
+|Aug 24, 2023|Revision submitted to journal|
 
 # Acknowledgements
 
@@ -15,6 +27,8 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
  **MMNet**, TPAMI 2022, [Original code](https://github.com/bruceyo/MMNet)
  
  **PoseC3D**, CVPR 2022, [Original code](https://github.com/kennymckormick/pyskl)
+
+ **MMNet**, CVPR 2020, [Original code](https://github.com/kenziyuliu/MS-G3D)
 
  Thanks to the original authors for their work! Although our work represents only a modest improvement upon existing studies, we remain optimistic that it can provide valuable enlightenment to someone.
 
@@ -34,19 +48,27 @@ The detailed ablation studies on NTU RGB+D (CS/CV) and NTU RGB+D 120 (XSub/XSet)
 | \#1    |  $J$                | PoseC3D        | 93.7 | 96.5 | 85.9 | 89.7 |
 | \#2    |  $B$                | PoseC3D        | 93.4 | 96.0 | 85.9 | 89.7 |
 | \#3    |  $J+B$              | PoseC3D        | 94.1 | 96.8 | 86.6 | 90.2 |
-| \#4    |  $R$                | ResNet18       | 77.8 | 84.3 | 70.2 | 70.3 |
-| \#5    |  $O$                | ResNet18       | 63.7 | 69.2 | 54.5 | 55.6 |
-| \#6    |  $D$                | ResNet18       | 78.4 | 76.6 | 72.6 | 71.2 |
-| \#7    |  $S+R$              | \#3+\#4        | 94.8 | 97.7 | 88.4 | 91.8 |
-| \#8    |  $S+D$              | \#3+\#6        | 94.4 | 97.1 | 88.2 | 91.5 |
-| \#9    |  $R+O$              | \#4+\#5        | 81.2 | 86.1 | 73.2 | 73.8 |
-| \#10   |  $R+D$              | \#4+\#6        | 83.9 | 86.3 | 78.3 | 78.4 |
-| \#11   |  $S+R+O$            | \#3+\#4+\#5    | 94.9 | 97.9 | 88.9 | 92.0 |
-| \#12   |  $S+R+D$            | \#3+\#4+\#6    | 95.0 | 97.9 | 89.7 | 92.5 |
-| \#13   |  $R+O+D$            | \#4+\#5+\#6    | 85.8 | 88.6 | 80.0 | 80.3 |
-| \#14   |  $S+R+O+D$          | \#3+\#4+\#5+\#6| **95.1** | **98.0** | **89.9** | **92.7** |
+| \#4    |  $J$                | MS-G3D         | 88.4 | 94.2 | 81.5 | 82.3 |  
+| \#5    |  $B$                | MS-G3D         | 89.5 | 94.0 | 85.0 | 86.4 |  
+| \#6    |  $S$                | \#4+\#5        | 90.9 | 95.2 | 86.4 | 87.6 |
+| \#7    |  $R$                | ResNet18       | 77.8 | 84.3 | 70.2 | 70.3 |  
+| \#8    |  $O$                | ResNet18       | 63.7 | 69.2 | 54.5 | 55.6 |  
+| \#9    |  $D$                | ResNet18       | 78.4 | 76.6 | 72.6 | 71.2 |  
+| \#10   |  $S+R$              | \#3+\#7        | 94.8 | 97.7 | 88.4 | 91.8 |
+| \#11   |  $S+D$              | \#3+\#9        | 94.5 | 97.2 | 88.2 | 91.5 | 
+| \#12   |  $S+R$              | \#6+\#7        | 92.8 | 96.7 | 89.5 | 90.5 | 
+| \#13   |  $S+D$              | \#6+\#9        | 92.2 | 96.0 | 89.1 | 90.0 |
+| \#14   |  $R+O$              | \#7+\#8        | 83.4 | 88.3 | 77.0 | 81.6 |
+| \#15   |  $R+D$              | \#7+\#9        | 85.5 | 88.3 | 81.2 | 83.8 | 
+| \#16   |  $S+R+O$            | \#3+\#7+\#8    | 94.9 | 97.9 | 88.9 | 92.0 | 
+| \#17   |  $S+R+D$            | \#3+\#7+\#9    | 95.0 | 97.9 | 89.7 | 92.5 | 
+| \#18   |  $S+R+O$            | \#6+\#7+\#8    | 93.0 | 96.9 | 89.8 | 90.9 | 
+| \#19   |  $S+R+D$            | \#6+\#7+\#9    | 93.3 | 96.9 | 90.5 | 91.5 |
+| \#20   |  $R+O+D$            | \#7+\#8+\#9 (HCMFN)    |87.7 | 90.5 | 83.4 | 83.8 |
+| \#21   |  $S+R+O+D$          | \#3+\#7+\#8+\#9 (HCMFN)| **95.2** | **98.0** | 89.9 | **92.7** |
+| \#22   |  $S+R+O+D$          | \#6+\#7+\#8+\#9 (HCMFN)| 93.5 | 97.1 | **90.7** | 91.7 |
 
-$J$, $B$ represent 3D heatmap volumes of jonits and bones, respectively. $S$ stands for $J$ and $B$ together. $R$, $O$ and $D$ denote HCI of RGB, optical flow and depth, respectively. + indicates socre fusion. Bold accuracy indicates the best (HCMFN).
+$J$, $B$ represent the feature representations of jonits and bones, respectively. $S$ stands for $J$ and $B$ together. $R$, $O$ and $D$ denote HCI of RGB, optical flow and depth, respectively. + indicates socre fusion. Bold accuracy indicates the best (HCMFN).
 
 # How to reproduce this work?
 
