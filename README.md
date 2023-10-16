@@ -30,7 +30,7 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
  
  **PoseC3D**, CVPR 2022, [Original code](https://github.com/kennymckormick/pyskl)
 
- **MMNet**, CVPR 2020, [Original code](https://github.com/kenziyuliu/MS-G3D)
+ **MS-G3D**, CVPR 2020, [Original code](https://github.com/kenziyuliu/MS-G3D)
 
  Thanks to the original authors for their work! Although our work represents only a modest improvement upon existing studies, we remain optimistic that it can provide valuable enlightenment to someone.
 
