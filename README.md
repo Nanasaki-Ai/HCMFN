@@ -16,12 +16,12 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
 
 | Date   | Status |
 |--------|--------|
-|May 31, 2023|Manuscript submit to journal|
-|Aug 04, 2023|Revise|
+|May 31, 2023|Manuscript submitted to journal|
+|Aug 04, 2023|Revised|
 |Aug 24, 2023|Revision submitted to journal|
-|Oct 04, 2023|Revise|
+|Oct 04, 2023|Revised|
 |Oct 11, 2023|Revision submitted to journal|
-|Oct 21, 2023|**Accept**|
+|Oct 21, 2023|**Accepted**|
 
 # Acknowledgements
 
