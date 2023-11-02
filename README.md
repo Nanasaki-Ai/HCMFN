@@ -12,7 +12,7 @@ Extensive experiments on two large-scale multimodal datasets, namely NTU RGB+D a
 
 (2) recognizing actions from varying viewpoints.
 
-This work has been submitted to **ESWA**. Please enlighten me with your instructions.
+This work has been accepted by **ESWA**. Please enlighten me with your instructions.
 
 | Date   | Status |
 |--------|--------|
@@ -23,9 +23,11 @@ This work has been submitted to **ESWA**. Please enlighten me with your instruct
 |Oct 11, 2023|Revision submitted to journal|
 |Oct 21, 2023|**Accepted**|
 
+[Article available online](https://www.sciencedirect.com/science/article/pii/S0957417423028166?via%3Dihub)
+
 # Acknowledgements
 
- This work is based on the following two works：
+ This work is based on the following three works：
 
  **MMNet**, TPAMI 2022, [Original code](https://github.com/bruceyo/MMNet)
  
