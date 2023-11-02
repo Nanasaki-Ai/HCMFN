@@ -22,8 +22,8 @@ This work has been accepted by **ESWA**. Please enlighten me with your instructi
 |Oct 04, 2023|Revised|
 |Oct 11, 2023|Revision submitted to journal|
 |Oct 21, 2023|**Accepted**|
+|Oct 31, 2023|Article available online [Link](https://www.sciencedirect.com/science/article/pii/S0957417423028166?via%3Dihub)|
 
-[Article available online](https://www.sciencedirect.com/science/article/pii/S0957417423028166?via%3Dihub)
 
 # Acknowledgements
 
