@@ -114,9 +114,9 @@ $J$, $B$ represent the feature representations of jonits and bones, respectively
  | HCI modalities | Baidu Cloud Link |  Google Drive Link |
  |----------------|------------------|--------------------| 
  | RGB HCI         | [Link](https://pan.baidu.com/s/1gogL--PS7UA26xmrKn52OA?pwd=t061) | - |
- | Optical flow HCI| [Link](https://pan.baidu.com/s/1evggahe3mbbilrMR5Y_gYg?pwd=ffce) | - |
- | Depth HCI       | [Link](https://pan.baidu.com/s/1mE2ZloU3tD4Y7l708xzpVg?pwd=1p98) | - |
- 
+ | Optical flow HCI| [Link](https://pan.baidu.com/s/1mE2ZloU3tD4Y7l708xzpVg?pwd=1p98) | - |
+ | Depth HCI       | [Link](https://pan.baidu.com/s/1evggahe3mbbilrMR5Y_gYg?pwd=ffce) | - |
+
  <p align="center">
   <img src="demo/rock-paper-scissors.gif" alt="rock-paper-scissors (RGB video)" width="400"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
