@@ -214,6 +214,19 @@ We use the official code of [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) or MS-
  For example, you can ensemble the results of the XSub, one of the benchmark of NTU RGB+D:
  
     `python ensemble60_xsub.py`
+
+# Citation 
+ 
+```bibtex
+@article{hu2023human,
+  title={Human-centric multimodal fusion network for robust action recognition},
+  author={Hu, Zesheng and Xiao, Jian and Li, Le and Liu, Cun and Ji, Genlin},
+  journal={Expert Systems with Applications},
+  pages={122314},
+  year={2023},
+  publisher={Elsevier}
+}
+```
     
 # Contact
 
