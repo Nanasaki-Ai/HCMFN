@@ -42,7 +42,7 @@ This work has been accepted by **ESWA**. Please enlighten me with your instructi
  Last but not least, the authors will be very grateful for the selfless and constructive suggestions of the reviewers.
 
 # Update notice
-If you need to download on **Google Drive**, please contact me. Now you can also download everything on **Baidu Cloud**.
+If you need to download on **Google Drive**, please contact me. Now you can also download our preprocessed features of NTU RGB+D 60 on **Baidu Cloud**.
 
 # Ablation studies
 
