@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from resnet import resnet101 as ResNet
+from resnet import resnet18 as ResNet
 
 
 class Model(nn.Module):
