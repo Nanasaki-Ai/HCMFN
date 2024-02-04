@@ -197,7 +197,7 @@ We use the official code of [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) or MS-
  
  **You can quickly reproduce the experimental results in the article based on the content of this part only.**
 
- Due to the upload file size limit (25MB), we store ensemble-related files (368MB) in [Baidu Cloud](https://pan.baidu.com/s/1mY2BWLJqxprsQ4cZB2-SEw).
+ Due to the upload file size limit (25MB), we store ensemble-related files (368MB) in [Baidu Cloud](https://pan.baidu.com/s/1mY2BWLJqxprsQ4cZB2-SEw?pwd=4ecs).
  
  The files are arranged as follows:
  
